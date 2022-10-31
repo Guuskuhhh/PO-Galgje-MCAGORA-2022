@@ -83,15 +83,21 @@ def toonSpelstatus():
 
 
 def kieswoord():
-  woord = "hallo"
-  
-  for letter in woord:
-    pass
-    
-  
+  woorden = ["autobandventieldopje", "liquidatie", "dextrose", "anticipatie", "portefeuille", "confisqueren", "bestuurdersaansprakelijksheidverzekering"]
+  gekozen_woord = random.choice(woorden)
+  print("ekozen_woord", gekozen_woord)
+  #geheim_woord.append("[")
+  for letter in gekozen_woord:
+    #geheim_woord.append("''")
+    geheim_woord.append(letter)
+    #geheim_woord.append(",")
+  #print("geheim woord:", geheim_woord)
+  #print(random.choice(woorden))
+ #   geheim_woord.append('')
+
 
 ################
-# HOOFDPROGRAMMA
+#HOOFDPROGRAMMA
 ################
 welkomstWoord()
 kieswoord()
