@@ -26,15 +26,9 @@ def welkomstWoord():
     )
 
 
-def raadLetter():
+def raadLetter(): #Dit zorgt ervoor dat de gebruiker een woord kan gaan raden
     print("Wil je een letter raden?")
     invoer = input()
-    #if invoer not in [
-     #       'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-     #       'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-    #]:
-     #   print("Foute invoer")
-
     return invoer
 
 
@@ -49,7 +43,7 @@ def maakWoordMetStreepjes():
 
 
 def verwerkGoedeGok(tot_nu_toe_geraden_woord, gok, geheim_woord,
-                    spel_afgelopen):
+                    spel_afgelopen): #als de letter in het woord zit zorgt dit er voor dat dat verwerkt wordt
     print("Hoera!")
     index_teller = 0
     for letter in geheim_woord:
@@ -85,15 +79,8 @@ def toonSpelstatus():
 def kieswoord():
   woorden = ["autobandventieldopje", "liquidatie", "dextrose", "anticipatie", "portefeuille", "confisqueren", "bestuurdersaansprakelijksheidverzekering"]
   gekozen_woord = random.choice(woorden)
-  print("ekozen_woord", gekozen_woord)
-  #geheim_woord.append("[")
   for letter in gekozen_woord:
-    #geheim_woord.append("''")
     geheim_woord.append(letter)
-    #geheim_woord.append(",")
-  #print("geheim woord:", geheim_woord)
-  #print(random.choice(woorden))
- #   geheim_woord.append('')
 
 
 ################
